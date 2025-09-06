@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Thitimethi — Portfolio</title>
+  <meta name="description" content="Portfolio of Thitimethi (Owen): Game Design & Development, UI/UX, 2D/3D Art."/>
+  <link rel="alternate" href="index.html" hreflang="en">
+  <link rel="alternate" href="th.html" hreflang="th">
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Thitimethi Limaphirak</div>
+      <div class="spacer"></div>
+      <nav class="menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#works">Works</a>
+      </nav>
+      <div class="lang">
+        <a class="lang-btn current" href="index.html" lang="en" hreflang="en">EN</a>
+        <span class="sep">/</span>
+        <a class="lang-btn" href="th.html" lang="th" hreflang="th">TH</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="wrap grid two">
+      <div>
+        <span class="badge">Portfolio Showcase</span>
+        <h1>Thitimethi Limaphirak</h1>
+        <p class="lead">
+          Hello! I’m Owen, a Computer Science student who grew up with games. To me, games are more than entertainment—they’re spaces of creativity, challenge, and connection with people. I want to create games that bring both fun and rewarding experiences to players, so that they’ll want to return and discover something new every time they play.
+        </p>
+        <p><strong>Bangkok University (BU)</strong><br/>
+          Bachelor of Science in Computer Science<br/>
+          School of Information Technology and Innovation
+        </p>
+      </div>
+      <div class="card thumb">
+        <img src="img/profile.png">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap grid two">
+      <article class="card">
+        <h2 class="sec-title">ABOUT ME</h2>
+        <div class="grid two">
+          <div>
+            <p><strong>Thitimethi Limaphirak</strong><br/>Nickname: Owen</p>
+            <p>Birthday: January, 2003<br/>Age: 22 years</p>
+          </div>
+          <div>
+            <p>
+              Email: <strong>nice2mu.hub@gmail.com</strong><br/>
+              Email (BU): <strong>thitimethi.lima@bumail.net</strong>
+            </p>
+            <p>Interested occupation: <strong>Game Design and Development</strong></p>
+          </div>
+        </div>
+      </article>
+      <aside class="card">
+        <h3>Social</h3>
+        facebook: <a href="https://www.facebook.com/thitimethi.limaphirak">Thitimethi Limaphirak</a><br/>
+        Youtube: <a href="https://www.youtube.com/@Nice2MU">Nice2MU</a><br/>
+        Github: <a href="https://github.com/Nice2MU">Nice2MU</a>
+        <div class="cols"></div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap grid two">
+      <div class="card">
+        <h2 class="sec-title">Skills</h2>
+        <ul class="chips">
+          <li>Python</li><li>JavaScript</li><li>C#, C++</li><li>HTML</li><li>CSS</li><li>PHP</li><li>SQL</li><li>Pixel/2D Art Creation</li><li>3D Modeling &amp; Animation</li><li>UI/UX Design</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2 class="sec-title">Tools</h2>
+        <ul class="chips">
+          <li>VS Code</li><li>Unity</li><li>Blockbench</li><li>Blender</li><li>Adobe Photoshop</li><li>Aseprite</li><li>Microsoft Word</li><li>PowerPoint</li><li>Excel</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="works">
+    <div class="wrap">
+      <h2 class="sec-title">Works</h2>
+      <div class="grid three">
+        <article class="card proj">
+          <div class="thumb slideshow"
+               data-slides='["img/works1a.png","img/works2a.png","img/works3a.png","img/works4a.png"]'
+               data-interval="4000">
+            <img class="slide active" src="img/works1a.png" alt="Game Development cover">
+          </div>
+          <h3>Game Development</h3>
+          <p class="muted">Game Development & Prototype | TheEchoes</p>
+          <p><a href="https://www.notion.so/TheEchoes-1a3ea5f5565c80e89d64e1b425fc93a0?source=copy_link" target="_blank" rel="noopener">View more on projects →</a></p>
+        </article>
+
+        <article class="card proj">
+          <div class="thumb slideshow"
+               data-slides='["img/works1b.png"]'
+               data-interval="4800">
+            <img class="slide active" src="img/works1b.png" alt="UI/UX cover">
+          </div>
+          <h3>UI/UX Design</h3>
+          <p class="muted">Interface Design for Board Game Rental Platform | LunarCafe</p>
+        </article>
+
+        <article class="card proj">
+          <div class="thumb slideshow"
+               data-slides='["img/works1c.png","img/works2c.png","img/works3c.png"]'
+               data-interval="5200">
+            <img class="slide active" src="img/works1c.png" alt="3D Modeling & Animation cover">
+          </div>
+          <h3>3D Modeling &amp; Animation</h3>
+          <p class="muted">3D Models, Rigs, and Motion Animation.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">© <span id="y"></span> Thitimethi Limaphirak</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent=new Date().getFullYear();
+    (function(){
+      const slideBoxes = document.querySelectorAll('.slideshow');
+      slideBoxes.forEach(box => {
+        const interval = parseInt(box.dataset.interval || '4000', 10);
+        let list;
+        try { list = JSON.parse(box.dataset.slides || '[]'); }
+        catch { list = []; }
+        if (!Array.isArray(list) || list.length < 2) return;
+        const imgs = box.querySelectorAll('img.slide');
+        if (imgs.length < 2) {
+          const extra = document.createElement('img');
+          extra.className = 'slide';
+          extra.alt = '';
+          box.appendChild(extra);
+        }
+        const [a,b] = box.querySelectorAll('img.slide');
+        let i = 0;
+        a.src = list[i]; a.classList.add('active');
+        b.src = list[(i+1) % list.length];
+        list.slice(2).forEach(src => { const p = new Image(); p.src = src; });
+        setInterval(()=>{
+          i = (i + 1) % list.length;
+          const show = (a.classList.contains('active')) ? b : a;
+          const hide = (show === a) ? b : a;
+          show.src = list[i]; show.classList.add('active');
+          hide.classList.remove('active');
+        }, interval);
+      });
+    })();
+  </script>
+</body>
+</html>
