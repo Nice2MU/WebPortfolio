@@ -8,24 +8,27 @@
   <link rel="alternate" href="index.html" hreflang="en">
   <link rel="alternate" href="th.html" hreflang="th">
   <link rel="stylesheet" href="style.css"/>
-
 </head>
+
 <body>
   <header>
-    <div class="wrap nav">
-      <div class="brand">ฐิติเมธี ลิมาภิรักษ์</div>
-      <div class="spacer"></div>
-      <nav class="menu">
-        <a href="#about">เกี่ยวกับ</a>
-        <a href="#skills">ทักษะ</a>
-        <a href="#works">ผลงาน</a>
-      </nav>
-      <div class="lang">
+  <div class="wrap nav">
+    <div class="brand">ฐิติเมธี ลิมาภิรักษ์</div>
+    <input type="checkbox" id="navCheck" class="nav-check" aria-hidden="true">
+    <label for="navCheck" class="nav-toggle" aria-label="Toggle navigation">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </label>
+    <nav class="menu" id="siteNav">
+      <a href="#about">เกี่ยวกับ</a>
+      <a href="#skills">ทักษะ</a>
+      <a href="#works">ผลงาน</a>
+      <div class="lang-row">
         <a class="lang-btn" href="index.html" lang="en" hreflang="en">EN</a>
         <span class="sep">/</span>
         <a class="lang-btn current" href="th.html" lang="th" hreflang="th">TH</a>
       </div>
-    </div>
+    </nav>
+  </div>
   </header>
 
   <section id="home">
@@ -48,45 +51,59 @@
   </section>
 
   <section id="about">
-    <div class="wrap grid two">
-      <article class="card">
-        <h2 class="sec-title">เกี่ยวกับผม</h2>
-        <div class="grid two">
-          <div>
-            <p><strong>ฐิติเมธี ลิมาภิรักษ์</strong><br/>ชื่อเล่น: โอเว่น</p>
-            <p>วันเกิด: มกราคม, 2546<br/>อายุ: 22 ปี</p>
-          </div>
-          <div>
-            <p>
-              อีเมล: <strong>nice2mu.hub@gmail.com</strong><br/>
-              อีเมล (BU): <strong>thitimethi.lima@bumail.net</strong>
-            </p>
-            <p>สายงานที่สนใจ: <strong>การออกแบบและพัฒนาเกม</strong></p>
-          </div>
+  <div class="wrap grid two">
+    <article class="card">
+      <h2 class="sec-title">เกี่ยวกับผม</h2>
+      <div class="about-grid">
+        <div>
+          <p><strong>ฐิติเมธี ลิมาภิรักษ์</strong><br/>ชื่อเล่น: โอเว่น</p>
+          <p>วันเกิด: มกราคม, 2546<br/>อายุ: 22 ปี</p>
         </div>
-      </article>
-      <aside class="card">
-        <h3>ช่องทางโซเชียล</h3>
-        facebook: <a href="https://www.facebook.com/thitimethi.limaphirak">Thitimethi Limaphirak</a><br/>
-        Youtube: <a href="https://www.youtube.com/@Nice2MU">Nice2MU</a><br/>
-        Github: <a href="https://github.com/Nice2MU">Nice2MU</a>
-        <div class="cols"></div>
-      </aside>
-    </div>
-  </section>
+        <div>
+          <p>
+            อีเมล: <strong>nice2mu.hub@gmail.com</strong><br/>
+            อีเมล (BU): <strong>thitimethi.lima@bumail.net</strong>
+          </p>
+          <p>สายงานที่สนใจ: <strong>การออกแบบและพัฒนาเกม</strong></p>
+        </div>
+      </div>
+    </article>
+    <aside class="card">
+      <h2 class="sec-title">ช่องทางโซเชียล</h2>
+      facebook: <a href="https://www.facebook.com/thitimethi.limaphirak" target="_blank" rel="noopener">Thitimethi Limaphirak</a><br/>
+      Linkedin: <a href="https://www.linkedin.com/in/thitimethi-limaphirak-a6a855381" target="_blank" rel="noopener">Thitimethi Limaphirak</a><br/>
+      Github: <a href="https://github.com/Nice2MU" target="_blank" rel="noopener">Nice2MU</a></p>
+    </aside>
+  </div>
+</section>
 
   <section id="skills">
     <div class="wrap grid two">
       <div class="card">
         <h2 class="sec-title">ทักษะ</h2>
         <ul class="chips">
-          <li>Python</li><li>JavaScript</li><li>C#, C++</li><li>HTML</li><li>CSS</li><li>PHP</li><li>SQL</li><li>Pixel/2D Art Creation</li><li>3D Modeling &amp; Animation</li><li>UI/UX Design</li>
+          <li>C#, C++</li><li>Python</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>PHP</li><li>SQL</li><li>Pixel/2D Art Creation</li><li>3D Modeling &amp; Animation</li><li>UI/UX Design</li>
         </ul>
       </div>
+
+      <div class="card">
+        <h2 class="sec-title">ทักษะเพิ่มเติม</h2>
+        <ul class="chips">
+          <li>การแก้ปัญหาและวิเคราะห์สาหตุ</li><li>ความคิดสร้างสรรค์ในการออกแบบและพัฒนา</li><li>เรียนรู้และพัฒนาทักษะใหม่ ๆ ได้อย่างรวดเร็ว</li>
+        </ul>
+      </div>
+      
       <div class="card">
         <h2 class="sec-title">เครื่องมือที่ถนัด</h2>
         <ul class="chips">
-          <li>VS Code</li><li>Unity</li><li>Blockbench</li><li>Blender</li><li>Adobe Photoshop</li><li>Aseprite</li><li>Microsoft Word</li><li>PowerPoint</li><li>Excel</li>
+          <li>VS Code</li><li>Unity</li><li>Blockbench</li><li>Blender</li><li>Git, GitHub</li><li>Adobe Photoshop</li><li>Aseprite</li><li>Figma</li><li>Microsoft Word</li><li>PowerPoint</li><li>Excel</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="sec-title">งานอดิเรก</h2>
+        <ul class="chips">
+          <li>เล่นเกม</li><li>บอร์ดเกม</li><li>เทเบิลท็อปเกม</li><li>ประกอบและทำสีพลาสติก โมเดล</li>
         </ul>
       </div>
     </div>
@@ -98,35 +115,37 @@
       <div class="grid three">
         <article class="card proj">
           <div class="thumb slideshow"
-               data-slides='["img/works1a.png","img/works2a.png","img/works3a.png","img/works4a.png"]'
+               data-slides='["img/works1a.png","img/works2a.png","img/works3a.png","img/works4a.png","img/works5a.png"]'
                data-interval="4000">
             <img class="slide active" src="img/works1a.png" alt="Game Development cover">
           </div>
           <h3>พัฒนาเกม</h3>
-          <p class="muted">ผลงานและต้นแบบที่พัฒนาเกม | TheEchoes</p>
-          <p><a href="https://www.notion.so/TheEchoes-1a3ea5f5565c80e89d64e1b425fc93a0?source=copy_link" target="_blank" rel="noopener">ดูผลงานเพิ่มเติม →</a></p>
+          <p class="muted">ผลงานต้นแบบที่พัฒนา | TheEchoes</p>
+          <p class="muted">พัฒนาด้วย Unity, VS Code และ Aseprite</p>
+          <p><a href="https://www.notion.so/TheEchoes-1a3ea5f5565c80e89d64e1b425fc93a0?source=copy_link" target="_blank" rel="noopener">View more on projects →</a></p>
         </article>
 
         <article class="card proj">
           <div class="thumb slideshow"
-               data-slides='["img/works1b.png"]'
-               data-interval="4800">
-            <img class="slide active" src="img/works1b.png" alt="UI/UX cover">
+               data-slides='["img/works1b.png","img/works2b.png","img/works3b.png","img/works4b.png"]'
+               data-interval="4500">
+            <img class="slide active" src="img/works1b.png" alt="2D & 3D Modeling & Animation cover">
+          </div>
+          <h3>2D/3D โมเดลและแอนิเมชัน</h3>
+          <p class="muted">การสร้างโมเดล 2D & 3D, การทำริก และแอนิเมชัน</p>
+          <p class="muted">โมเดล Low-poly และแอนิเมชันด้วย Blockbench, Pixel Art 2D ด้วย Aseprite</p>
+        </article>
+
+        <article class="card proj">
+          <div class="thumb slideshow"
+               data-slides='["img/works1c.png","img/works2c.png"]'
+               data-interval="5000">
+            <img class="slide active" src="img/works1c.png" alt="UI/UX cover">
           </div>
           <h3>ออกแบบ UI/UX</h3>
-          <p class="muted">ออกแบบอินเทอร์เฟซ ระบบเช่า–ยืมบอร์ดเกม | LunarCafe</p>
+          <p class="muted">ออกแบบ UI/UX สำหรับเกมและแอปพลิเคชัน</p>
+          <p class="muted">ออกแบบต้นแบบด้วย Figma</p>
         </article>
-
-        <article class="card proj">
-          <div class="thumb slideshow"
-               data-slides='["img/works1c.png","img/works2c.png","img/works3c.png"]'
-               data-interval="5200">
-            <img class="slide active" src="img/works1c.png" alt="3D Modeling & Animation cover">
-          </div>
-          <h3>โมเดล 3D และแอนิเมชัน</h3>
-          <p class="muted">โมเดล 3D, การทำริก และแอนิเมชันการเคลื่อนไหว</p>
-        </article>
-
       </div>
     </div>
   </section>
@@ -166,6 +185,72 @@
         }, interval);
       });
     })();
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const lb = document.createElement('div');
+      lb.className = 'lightbox';
+      lb.innerHTML = `
+        <div class="lb-frame">
+          <button class="lb-btn lb-close" aria-label="Close">✕</button>
+          <button class="lb-btn lb-prev"  aria-label="Previous">‹</button>
+          <img class="lightbox-img" alt="">
+          <button class="lb-btn lb-next"  aria-label="Next">›</button>
+        </div>
+      `;
+      document.body.appendChild(lb);
+
+      const frame   = lb.querySelector('.lb-frame');
+      const imgEl   = lb.querySelector('.lightbox-img');
+      const btnPrev = lb.querySelector('.lb-prev');
+      const btnNext = lb.querySelector('.lb-next');
+      const btnClose= lb.querySelector('.lb-close');
+
+      let slides = [], index = 0;
+
+      function show(i){
+        index = (i + slides.length) % slides.length;
+        imgEl.src = slides[index];
+      }
+      function openWith(list, startSrc){
+        slides = list;
+        const start = slides.indexOf(startSrc);
+        show(start >= 0 ? start : 0);
+        lb.classList.add('active');
+        document.body.classList.add('lb-open');
+      }
+      function close(){
+        lb.classList.remove('active');
+        document.body.classList.remove('lb-open');
+      }
+
+      document.querySelectorAll('.thumb.slideshow').forEach(box => {
+        const list = JSON.parse(box.dataset.slides || '[]');
+        box.addEventListener('click', e => {
+          const img = e.target.closest('img');
+          if(!img) return;
+          openWith(list.length ? list : [img.src], img.src);
+        });
+      });
+
+      btnPrev.addEventListener('click', () => show(index - 1));
+      btnNext.addEventListener('click', () => show(index + 1));
+      btnClose.addEventListener('click', close);
+
+      lb.addEventListener('click', e => { if(e.target === lb) close(); });
+
+      document.addEventListener('keydown', e => {
+        if(!lb.classList.contains('active')) return;
+        if(e.key === 'Escape') close();
+        if(e.key === 'ArrowLeft') show(index - 1);
+        if(e.key === 'ArrowRight') show(index + 1);
+      });
+      let sx=0;
+      imgEl.addEventListener('touchstart', e=>sx=e.touches[0].clientX,{passive:true});
+      imgEl.addEventListener('touchend', e=>{
+        const dx=e.changedTouches[0].clientX - sx;
+        if(Math.abs(dx)>40) (dx>0?btnPrev:btnNext).click();
+      },{passive:true});
+    });
   </script>
 </body>
 </html>
