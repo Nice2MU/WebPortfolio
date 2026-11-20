@@ -3,85 +3,162 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>ฐิติเมธี — พอร์ตโฟลิโอ</title>
-  <meta name="description" content="พอร์ตโฟลิโอของฐิติเมธี (โอเว่น): ออกแบบและพัฒนาเกม, UI/UX, งาน 2D/3D"/>
+  <title>ฐิติเมธี — พอร์ตโฟลิโอพัฒนาเกม</title>
+  <meta name="description" content="พอร์ตโฟลิโอของฐิติเมธี (โอเว่น): ออกแบบและพัฒนาเกม, ระบบ Backend, งาน 2D/3D, UI/UX และ AI Workflow"/>
   <link rel="alternate" href="index.html" hreflang="en">
   <link rel="alternate" href="th.html" hreflang="th">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+Thai:wght@400;500;700&family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
   <header>
-  <div class="wrap nav">
-    <div class="brand">ฐิติเมธี ลิมาภิรักษ์</div>
-    <input type="checkbox" id="navCheck" class="nav-check" aria-hidden="true">
-    <label for="navCheck" class="nav-toggle" aria-label="Toggle navigation">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </label>
-    <nav class="menu" id="siteNav">
-      <a href="#about">เกี่ยวกับ</a>
-      <a href="#experience">ประสบการณ์</a>
-      <a href="#skills">ทักษะ</a>
-      <a href="#works">ผลงาน</a>
-      <div class="lang-row">
-        <a class="lang-btn" href="index.html" lang="en" hreflang="en">EN</a>
-        <span class="sep">/</span>
-        <a class="lang-btn current" href="th.html" lang="th" hreflang="th">TH</a>
-      </div>
-    </nav>
-  </div>
+    <div class="wrap nav">
+      <div class="brand"><span class="brand-dot" aria-hidden="true"></span>ฐิติเมธี ลิมาภิรักษ์</div>
+      <input type="checkbox" id="navCheck" class="nav-check" aria-hidden="true">
+      <label for="navCheck" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </label>
+      <nav class="menu" id="siteNav">
+        <a href="#about">เกี่ยวกับ</a>
+        <a href="#experience">ประสบการณ์</a>
+        <a href="#skills">ทักษะ</a>
+        <a href="#works">ผลงาน</a>
+        <div class="lang-row">
+          <a class="lang-btn" href="index.html" lang="en" hreflang="en">EN</a>
+          <span class="sep">/</span>
+          <a class="lang-btn current" href="th.html" lang="th" hreflang="th">TH</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <section id="home">
-    <div class="wrap grid two">
-      <div>
-        <span class="badge">พอร์ตโฟลิโอ</span>
+    <div class="wrap hero-grid">
+      <div class="reveal in-view">
+        <span class="badge"><span class="pulse-dot" aria-hidden="true"></span>พร้อมร่วมงาน · Junior Game Dev / Backend</span>
         <h1>ฐิติเมธี ลิมาภิรักษ์</h1>
+        <p class="hero-role">&gt;_ Game Systems · Backend Logic · 2D/3D &amp; AI Workflow</p>
         <p class="lead">
-          สวัสดีครับ ผมโอเว่น นักศึกษาวิทยาการคอมพิวเตอร์ที่เติบโตมากับการเล่นเกม สำหรับผมเกม ไม่ใช่แค่ความบันเทิง แต่คือพื้นที่ที่เต็มไปด้วยไอเดีย ความท้าทาย และการมีปฏิสัมพันธ์กับผู้คน ผมอยากสร้างเกมที่มอบทั้งความสนุกและประสบการณ์ดี ๆ ให้ผู้เล่น เพื่อให้ผู้เล่นอยากกลับมาเล่นซ้ำและค้นพบสิ่งใหม่ทุกครั้งที่เล่น
+          สวัสดีครับ ผมโอเว่น จบการศึกษาวิทยาการคอมพิวเตอร์ ม.กรุงเทพ เคยฝึกงานทำเกมจริงมาแล้ว ถนัดทั้งเขียนระบบเกมกับฝั่ง Backend ทำภาพ 2D/3D ได้ และใช้ AI กับ MCP ช่วยทำงานให้ไวและคล่องขึ้นครับ
         </p>
-        <p><strong>มหาวิทยาลัยกรุงเทพ (BU)</strong><br/>
-          วิทยาศาสตรบัณฑิต สาขาวิทยาการคอมพิวเตอร์<br/>
-          คณะเทคโนโลยีสารสนเทศและนวัตกรรม
-        </p>
+        <div class="hero-edu">
+          <strong>มหาวิทยาลัยกรุงเทพ (BU)</strong><br/>
+          วิทยาศาสตรบัณฑิต สาขาวิทยาการคอมพิวเตอร์ · คณะเทคโนโลยีสารสนเทศและนวัตกรรม
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#works">ดูผลงานเลย →</a>
+          <a class="btn btn-ghost" href="Resume_thitimethi.pdf" download="Resume_thitimethi.pdf">ดาวน์โหลด Resume ↓</a>
+          <button type="button" class="btn btn-ghost copy-email" data-email="thitimethi.l@gmail.com">คัดลอกอีเมล ⎘</button>
+          <a class="btn btn-ghost" href="#contact">ทักมาคุยกัน</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-box">
+            <span class="stat-val">5 เดือน</span>
+            <span class="stat-lbl">ฝึกงาน Game Dev / Backend</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-val">5 หมวด</span>
+            <span class="stat-lbl">เกม, อาร์ต 2D/3D, UI/UX และ AI</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-val">Unity · C#</span>
+            <span class="stat-lbl">พัฒนาเกม + MCP และ AI</span>
+          </div>
+        </div>
       </div>
-      <div class="card thumb">
-        <img src="img/profile.png">
+
+      <div class="hero-visual reveal in-view">
+        <div class="card thumb" style="padding:0;margin:0">
+          <img src="img/profile.png" alt="รูปโปรไฟล์ ฐิติเมธี ลิมาภิรักษ์">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="strengths">
+    <div class="wrap">
+      <h2 class="sec-title reveal">สิ่งที่ผมถนัดและช่วยทีมได้</h2>
+      <div class="pillars">
+        <article class="card pillar reveal">
+          <span class="pillar-num">01 / GAMEPLAY &amp; BACKEND</span>
+          <h3>เขียนระบบเกมและ Backend</h3>
+          <p>เคยลงมือเขียนทั้งความสามารถตัวละคร สกิล อุปกรณ์ มอนสเตอร์ ไปจนถึงช่วยเทสต์ระบบก่อนอัปเดตและไล่แก้บั๊กจริง</p>
+        </article>
+        <article class="card pillar reveal">
+          <span class="pillar-num">02 / ART &amp; UI/UX</span>
+          <h3>ทำได้ทั้งโค้ดและงานอาร์ต</h3>
+          <p>คุยกับฝั่งอาร์ตและดีไซน์รู้เรื่อง เพราะทำเองได้ตั้งแต่ Unity / C# ยัน Pixel Art (Aseprite), โมเดล 3D (Blockbench) และวางหน้าตา UI ของเกม</p>
+        </article>
+        <article class="card pillar reveal">
+          <span class="pillar-num">03 / AI &amp; MCP WORKFLOW</span>
+          <h3>ใช้ AI และ MCP ช่วยทำงานไวขึ้น</h3>
+          <p>เลือกใช้ AI แต่ละตัวและเชื่อมต่อ MCP ให้เข้ากับหน้างาน ช่วยทั้งเขียนโค้ด แก้บั๊ก และขึ้นต้นแบบได้เร็วขึ้น</p>
+        </article>
       </div>
     </div>
   </section>
 
   <section id="about">
-  <div class="wrap grid two">
-    <article class="card">
-      <h2 class="sec-title">เกี่ยวกับผม</h2>
-      <div class="about-grid">
-        <div>
-          <p><strong>ฐิติเมธี ลิมาภิรักษ์</strong><br/>ชื่อเล่น: โอเว่น</p>
-          <p>วันเกิด: มกราคม, 2546<br/>อายุ: 23 ปี</p>
+    <div class="wrap grid two">
+      <article class="card reveal">
+        <h2 class="sec-title">เกี่ยวกับผม</h2>
+        <div class="about-grid">
+          <div>
+            <p><strong>ฐิติเมธี ลิมาภิรักษ์</strong><br/>ชื่อเล่น: โอเว่น</p>
+            <p>วันเกิด: มกราคม, 2546<br/>อายุ: 23 ปี</p>
+            <p>สายงานที่สนใจ:<br/><strong>การออกแบบและพัฒนาเกม</strong></p>
+          </div>
+          <div>
+            <p>
+              อีเมล:<br/>
+              <button type="button" class="copy-email" data-email="thitimethi.l@gmail.com" title="คลิกเพื่อคัดลอก">
+                thitimethi.l@gmail.com ⎘
+              </button>
+            </p>
+            <p>
+              อีเมล (ส่วนตัว):<br/>
+              <button type="button" class="copy-email" data-email="nice2mu.hub@gmail.com" title="คลิกเพื่อคัดลอก">
+                nice2mu.hub@gmail.com ⎘
+              </button>
+            </p>
+          </div>
         </div>
-        <div>
-          <p>
-            อีเมล: <strong>thitimethi.l@gmail.com</strong><br/>
-            อีเมล (ส่วนตัว): <strong>nice2mu.hub@gmail.com</strong>
-          </p>
-          <p>สายงานที่สนใจ: <strong>การออกแบบและพัฒนาเกม</strong></p>
+      </article>
+
+      <aside class="card reveal">
+        <h2 class="sec-title">ช่องทางโซเชียล</h2>
+        <div class="social-list">
+          <a class="social-pill" href="https://www.facebook.com/thitimethi.limaphirak" target="_blank" rel="noopener">
+            <span>Facebook</span>
+            <span class="muted">Thitimethi Limaphirak ↗</span>
+          </a>
+          <a class="social-pill" href="https://www.linkedin.com/in/thitimethi-limaphirak-a6a855381" target="_blank" rel="noopener">
+            <span>LinkedIn</span>
+            <span class="muted">Thitimethi Limaphirak ↗</span>
+          </a>
+          <a class="social-pill" href="https://github.com/Nice2MU" target="_blank" rel="noopener">
+            <span>GitHub</span>
+            <span class="muted">Nice2MU ↗</span>
+          </a>
+          <a class="social-pill" href="https://www.youtube.com/@Nice2MU" target="_blank" rel="noopener">
+            <span>YouTube</span>
+            <span class="muted">@Nice2MU ↗</span>
+          </a>
         </div>
-      </div>
-    </article>
-    <aside class="card">
-      <h2 class="sec-title">ช่องทางโซเชียล</h2>
-      facebook: <a href="https://www.facebook.com/thitimethi.limaphirak" target="_blank" rel="noopener">Thitimethi Limaphirak</a><br/>
-      Linkedin: <a href="https://www.linkedin.com/in/thitimethi-limaphirak-a6a855381" target="_blank" rel="noopener">Thitimethi Limaphirak</a><br/>
-      Github: <a href="https://github.com/Nice2MU" target="_blank" rel="noopener">Nice2MU</a></p>
-    </aside>
-  </div>
-</section>
+      </aside>
+    </div>
+  </section>
 
   <section id="experience">
     <div class="wrap">
-      <h2 class="sec-title">ประสบการณ์การทำงาน</h2>
-      <article class="card">
+      <h2 class="sec-title reveal">ประสบการณ์การทำงาน</h2>
+      <article class="card exp-card reveal">
         <div class="exp-head">
           <h3>Junior Game Dev / Backend (ฝึกงาน)</h3>
           <span class="exp-period">ระยะเวลา 5 เดือน</span>
@@ -98,28 +175,28 @@
 
   <section id="skills">
     <div class="wrap grid two">
-      <div class="card">
+      <div class="card reveal">
         <h2 class="sec-title">ทักษะ</h2>
         <ul class="chips">
           <li>C#, C++</li><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>HTML</li><li>CSS</li><li>PHP</li><li>SQL</li><li>Pixel/2D Art Creation</li><li>3D Modeling &amp; Animation</li><li>UI/UX Design</li><li>AI-Assisted Coding &amp; Art</li><li>MCP &amp; AI Model Selection</li>
         </ul>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h2 class="sec-title">ทักษะเพิ่มเติม</h2>
         <ul class="chips">
-          <li>การแก้ปัญหาและวิเคราะห์สาหตุ</li><li>ความคิดสร้างสรรค์ในการออกแบบและพัฒนา</li><li>เรียนรู้และพัฒนาทักษะใหม่ ๆ ได้อย่างรวดเร็ว</li>
+          <li>การแก้ปัญหาและวิเคราะห์สาเหตุ</li><li>ความคิดสร้างสรรค์ในการออกแบบและพัฒนา</li><li>เรียนรู้และพัฒนาทักษะใหม่ ๆ ได้อย่างรวดเร็ว</li>
         </ul>
       </div>
-      
-      <div class="card">
+
+      <div class="card reveal">
         <h2 class="sec-title">เครื่องมือ</h2>
         <ul class="chips">
           <li>VS Code</li><li>Unity</li><li>Blockbench</li><li>Blender</li><li>Git, GitHub</li><li>Adobe Photoshop</li><li>Aseprite</li><li>AI Assistants &amp; MCP</li>
         </ul>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h2 class="sec-title">งานอดิเรก</h2>
         <ul class="chips">
           <li>เล่นเกม</li><li>บอร์ดเกม</li><li>เทเบิลท็อปเกม</li><li>ประกอบและทำสีพลาสติก โมเดล</li>
@@ -130,168 +207,116 @@
 
   <section id="works">
     <div class="wrap">
-      <h2 class="sec-title">ผลงาน</h2>
-      <div class="grid three">
-        <article class="card proj">
+      <div class="works-head reveal">
+        <h2 class="sec-title">ผลงาน</h2>
+        <div class="filter-bar" role="group" aria-label="ตัวกรองผลงาน">
+          <button type="button" class="filter-btn active" data-filter="all">ทั้งหมด (5)</button>
+          <button type="button" class="filter-btn" data-filter="gamedev">พัฒนาเกม</button>
+          <button type="button" class="filter-btn" data-filter="art">งาน 2D/3D</button>
+          <button type="button" class="filter-btn" data-filter="uiux">UI/UX</button>
+          <button type="button" class="filter-btn" data-filter="ai">AI Workflow</button>
+        </div>
+      </div>
+
+      <div class="works-grid">
+        <article class="card proj featured reveal" data-category="gamedev">
           <div class="thumb slideshow"
                data-slides='["img/works1a.png","img/works2a.png","img/works3a.png","img/works4a.png","img/works5a.png","img/works6a.png","img/works7a.png","img/works8a.png"]'
                data-interval="4000">
             <img class="slide active" src="img/works1a.png" alt="Game Development cover">
           </div>
           <h3>พัฒนาเกม</h3>
+          <span class="proj-role">บทบาท: Solo Developer &amp; Pixel Artist</span>
           <p class="muted">ผลงานต้นแบบที่พัฒนา | TheEchoes</p>
-          <p class="muted">พัฒนาด้วย Unity, VS Code และ Aseprite</p>
-          <p><a href="https://www.notion.so/TheEchoes-1a3ea5f5565c80e89d64e1b425fc93a0?source=copy_link" target="_blank" rel="noopener">ดูผลงานเพิ่มเติม →</a></p>
-        </article>
-
-        <article class="card proj">
-          <div class="thumb slideshow"
-               data-slides='["img/works1b.png","img/works2b.png","img/works3b.png","img/works4b.png","img/works5b.png"]'
-               data-interval="4500">
-            <img class="slide active" src="img/works1b.png" alt="2D & 3D Modeling & Animation cover">
+          <p class="muted">พัฒนาระบบเกมและงานภาพ Pixel Art ตั้งแต่ต้นแบบจนเล่นได้จริง</p>
+          <div class="proj-tags">
+            <span>Unity</span><span>VS Code</span><span>Aseprite</span>
           </div>
-          <h3>2D/3D โมเดลและแอนิเมชัน</h3>
-          <p class="muted">การสร้างโมเดล 2D & 3D, การทำริก และแอนิเมชัน</p>
-          <p class="muted">โมเดล Low-poly และแอนิเมชันด้วย Blockbench, Pixel Art 2D ด้วย Aseprite</p>
+          <p class="proj-link"><a href="https://www.notion.so/TheEchoes-1a3ea5f5565c80e89d64e1b425fc93a0?source=copy_link" target="_blank" rel="noopener">ดูผลงานเพิ่มเติม →</a></p>
         </article>
 
-        <article class="card proj">
-          <div class="thumb slideshow"
-               data-slides='["img/works1c.png","img/works2c.png"]'
-               data-interval="5000">
-            <img class="slide active" src="img/works1c.png" alt="UI/UX cover">
-          </div>
-          <h3>ออกแบบ UI/UX</h3>
-          <p class="muted">ออกแบบ UI/UX สำหรับเกมและแอปพลิเคชัน</p>
-          <p class="muted">ออกแบบต้นแบบด้วย Figma</p>
-        </article>
-
-        <article class="card proj">
+        <article class="card proj featured reveal" data-category="gamedev">
           <div class="thumb slideshow"
                data-slides='["img/works1d.png","img/works2d.png","img/works3d.png","img/works4d.png","img/works5d.png","img/works6d.png"]'
                data-interval="4500">
             <img class="slide active" src="img/works1d.png" alt="Internship Project cover">
           </div>
           <h3>ผลงานช่วงฝึกงาน</h3>
+          <span class="proj-role">บทบาท: Junior Game Dev / Backend (ฝึกงาน)</span>
           <p class="muted">Kyrie &amp; Terra: Eternal | บริษัท รจนาการเกม</p>
           <p class="muted">พัฒนาระบบตัวละคร สกิล อุปกรณ์ มอนสเตอร์ พร้อมทดสอบและแก้ไขบั๊ก</p>
+          <div class="proj-tags">
+            <span>Game Systems</span><span>Backend</span><span>QA &amp; Bug Fix</span>
+          </div>
         </article>
 
-        <article class="card proj">
+        <article class="card proj reveal" data-category="art">
+          <div class="thumb slideshow"
+               data-slides='["img/works1b.png","img/works2b.png","img/works3b.png","img/works4b.png","img/works5b.png"]'
+               data-interval="4500">
+            <img class="slide active" src="img/works1b.png" alt="2D & 3D Modeling & Animation cover">
+          </div>
+          <h3>2D/3D โมเดลและแอนิเมชัน</h3>
+          <span class="proj-role">บทบาท: 2D/3D Artist &amp; Animator</span>
+          <p class="muted">การสร้างโมเดล 2D &amp; 3D, การทำริก และแอนิเมชัน</p>
+          <p class="muted">โมเดล Low-poly และแอนิเมชันด้วย Blockbench, Pixel Art 2D ด้วย Aseprite</p>
+          <div class="proj-tags">
+            <span>Blockbench</span><span>Aseprite</span><span>Rigging</span>
+          </div>
+        </article>
+
+        <article class="card proj reveal" data-category="uiux">
+          <div class="thumb slideshow"
+               data-slides='["img/works1c.png","img/works2c.png"]'
+               data-interval="5000">
+            <img class="slide active" src="img/works1c.png" alt="UI/UX cover">
+          </div>
+          <h3>ออกแบบ UI/UX</h3>
+          <span class="proj-role">บทบาท: UI/UX Designer</span>
+          <p class="muted">ออกแบบ UI/UX สำหรับเกมและแอปพลิเคชัน</p>
+          <p class="muted">ออกแบบต้นแบบและหน้าจอ UI สำหรับเกมและแอปพลิเคชัน</p>
+          <div class="proj-tags">
+            <span>UI/UX</span><span>Game UI</span><span>Prototyping</span>
+          </div>
+        </article>
+
+        <article class="card proj reveal" data-category="ai">
           <div class="thumb slideshow"
                data-slides='["img/works1e.png","img/works2e.png","img/works3e.png","img/works4e.png","img/works5e.png","img/works6e.png","img/works7e.png","img/works8e.png","img/works9e.png","img/works10e.png","img/works11e.png"]'
                data-interval="4500">
             <img class="slide active" src="img/works1e.png" alt="AI-Assisted Workflow cover">
           </div>
           <h3>การทำงานร่วมกับ AI</h3>
+          <span class="proj-role">บทบาท: Developer &amp; AI Workflow Builder</span>
           <p class="muted">พัฒนาโปรเจกต์และต้นแบบร่วมกับ AI</p>
           <p class="muted">ใช้ AI ช่วยงานโค้ด งานอาร์ต/โมเดล เชื่อมต่อ MCP และเลือกใช้โมเดลให้เหมาะกับงาน</p>
+          <div class="proj-tags">
+            <span>AI Coding</span><span>MCP</span><span>Model Selection</span>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="wrap">© <span id="y"></span> Thitimethi Limaphirak</div>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent=new Date().getFullYear();
-    (function(){
-      const slideBoxes = document.querySelectorAll('.slideshow');
-      slideBoxes.forEach(box => {
-        const interval = parseInt(box.dataset.interval || '4000', 10);
-        let list;
-        try { list = JSON.parse(box.dataset.slides || '[]'); }
-        catch { list = []; }
-        if (!Array.isArray(list) || list.length < 2) return;
-        const imgs = box.querySelectorAll('img.slide');
-        if (imgs.length < 2) {
-          const extra = document.createElement('img');
-          extra.className = 'slide';
-          extra.alt = '';
-          box.appendChild(extra);
-        }
-        const [a,b] = box.querySelectorAll('img.slide');
-        let i = 0;
-        a.src = list[i]; a.classList.add('active');
-        b.src = list[(i+1) % list.length];
-        list.slice(2).forEach(src => { const p = new Image(); p.src = src; });
-        setInterval(()=>{
-          i = (i + 1) % list.length;
-          const show = (a.classList.contains('active')) ? b : a;
-          const hide = (show === a) ? b : a;
-          show.src = list[i]; show.classList.add('active');
-          hide.classList.remove('active');
-        }, interval);
-      });
-    })();
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const lb = document.createElement('div');
-      lb.className = 'lightbox';
-      lb.innerHTML = `
-        <div class="lb-frame">
-          <button class="lb-btn lb-close" aria-label="Close">✕</button>
-          <button class="lb-btn lb-prev"  aria-label="Previous">‹</button>
-          <img class="lightbox-img" alt="">
-          <button class="lb-btn lb-next"  aria-label="Next">›</button>
+  <section id="contact">
+    <div class="wrap">
+      <div class="card cta-card reveal">
+        <div>
+          <h2>อยากชวนคุยหรือร่วมงานกัน ทักมาได้เลยนะครับ</h2>
+          <p>ตอนนี้ผมกำลังมองหางานสาย Junior Game Dev, Backend หรืองานพัฒนาที่ใช้ AI ช่วยครับ ทักมาคุยหรือนัดสัมภาษณ์ได้เลย</p>
         </div>
-      `;
-      document.body.appendChild(lb);
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="Resume_thitimethi.pdf" download="Resume_thitimethi.pdf">ดาวน์โหลด Resume ↓</a>
+          <button type="button" class="btn btn-ghost copy-email" data-email="thitimethi.l@gmail.com">คัดลอกอีเมล (thitimethi.l@gmail.com) ⎘</button>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/thitimethi-limaphirak-a6a855381" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/Nice2MU" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      const frame   = lb.querySelector('.lb-frame');
-      const imgEl   = lb.querySelector('.lightbox-img');
-      const btnPrev = lb.querySelector('.lb-prev');
-      const btnNext = lb.querySelector('.lb-next');
-      const btnClose= lb.querySelector('.lb-close');
-
-      let slides = [], index = 0;
-
-      function show(i){
-        index = (i + slides.length) % slides.length;
-        imgEl.src = slides[index];
-      }
-      function openWith(list, startSrc){
-        slides = list;
-        const start = slides.indexOf(startSrc);
-        show(start >= 0 ? start : 0);
-        lb.classList.add('active');
-        document.body.classList.add('lb-open');
-      }
-      function close(){
-        lb.classList.remove('active');
-        document.body.classList.remove('lb-open');
-      }
-
-      document.querySelectorAll('.thumb.slideshow').forEach(box => {
-        const list = JSON.parse(box.dataset.slides || '[]');
-        box.addEventListener('click', e => {
-          const img = e.target.closest('img');
-          if(!img) return;
-          openWith(list.length ? list : [img.src], img.src);
-        });
-      });
-
-      btnPrev.addEventListener('click', () => show(index - 1));
-      btnNext.addEventListener('click', () => show(index + 1));
-      btnClose.addEventListener('click', close);
-
-      lb.addEventListener('click', e => { if(e.target === lb) close(); });
-
-      document.addEventListener('keydown', e => {
-        if(!lb.classList.contains('active')) return;
-        if(e.key === 'Escape') close();
-        if(e.key === 'ArrowLeft') show(index - 1);
-        if(e.key === 'ArrowRight') show(index + 1);
-      });
-      let sx=0;
-      imgEl.addEventListener('touchstart', e=>sx=e.touches[0].clientX,{passive:true});
-      imgEl.addEventListener('touchend', e=>{
-        const dx=e.changedTouches[0].clientX - sx;
-        if(Math.abs(dx)>40) (dx>0?btnPrev:btnNext).click();
-      },{passive:true});
-    });
-  </script>
+  <footer>
+    <div class="wrap">© <span id="y"></span> Thitimethi Limaphirak · Game Design &amp; Development</div>
+  </footer>
 </body>
 </html>

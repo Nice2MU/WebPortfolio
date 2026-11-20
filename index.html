@@ -3,85 +3,162 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Thitimethi — Portfolio</title>
-  <meta name="description" content="Portfolio of Thitimethi (Owen): Game Design & Development, UI/UX, 2D/3D Art."/>
+  <title>Thitimethi — Game Dev &amp; Portfolio</title>
+  <meta name="description" content="Portfolio of Thitimethi (Owen): Game Design & Development, Backend Systems, 2D/3D Art, UI/UX, and AI Workflow."/>
   <link rel="alternate" href="index.html" hreflang="en">
   <link rel="alternate" href="th.html" hreflang="th">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Sans+Thai:wght@400;500;700&family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
   <header>
-  <div class="wrap nav">
-    <div class="brand">Thitimethi Limaphirak</div>
-    <input type="checkbox" id="navCheck" class="nav-check" aria-hidden="true">
-    <label for="navCheck" class="nav-toggle" aria-label="Toggle navigation">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </label>
-    <nav class="menu" id="siteNav">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#works">Works</a>
-      <div class="lang-row">
-        <a class="lang-btn current" href="index.html" lang="en" hreflang="en">EN</a>
-        <span class="sep">/</span>
-        <a class="lang-btn" href="th.html" lang="th" hreflang="th">TH</a>
-      </div>
-    </nav>
-  </div>
+    <div class="wrap nav">
+      <div class="brand"><span class="brand-dot" aria-hidden="true"></span>Thitimethi Limaphirak</div>
+      <input type="checkbox" id="navCheck" class="nav-check" aria-hidden="true">
+      <label for="navCheck" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </label>
+      <nav class="menu" id="siteNav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#works">Works</a>
+        <div class="lang-row">
+          <a class="lang-btn current" href="index.html" lang="en" hreflang="en">EN</a>
+          <span class="sep">/</span>
+          <a class="lang-btn" href="th.html" lang="th" hreflang="th">TH</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <section id="home">
-    <div class="wrap grid two">
-      <div>
-        <span class="badge">Portfolio Showcase</span>
+    <div class="wrap hero-grid">
+      <div class="reveal in-view">
+        <span class="badge"><span class="pulse-dot" aria-hidden="true"></span>Open to Work · Junior Game Dev / Backend</span>
         <h1>Thitimethi Limaphirak</h1>
+        <p class="hero-role">&gt;_ Game Systems · Backend Logic · 2D/3D &amp; AI Workflow</p>
         <p class="lead">
-          Hello! I’m Owen, a Computer Science student who grew up with games. To me, games are more than entertainment—they’re spaces of creativity, challenge, and connection with people. I want to create games that bring both fun and rewarding experiences to players, so that they’ll want to return and discover something new every time they play.
+          Hi, I’m Owen — a Computer Science graduate from Bangkok University with real studio internship experience. I enjoy building gameplay &amp; backend systems, making 2D/3D art, and using AI + MCP workflows to get things built faster and cleaner.
         </p>
-        <p><strong>Bangkok University (BU)</strong><br/>
-          Bachelor of Science in Computer Science<br/>
-          School of Information Technology and Innovation
-        </p>
+        <div class="hero-edu">
+          <strong>Bangkok University (BU)</strong><br/>
+          Bachelor of Science in Computer Science · School of Information Technology and Innovation
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#works">View Selected Works →</a>
+          <a class="btn btn-ghost" href="Resume_thitimethi.pdf" download="Resume_thitimethi.pdf">Download Resume ↓</a>
+          <button type="button" class="btn btn-ghost copy-email" data-email="thitimethi.l@gmail.com">Copy Email ⎘</button>
+          <a class="btn btn-ghost" href="#contact">Hire / Contact</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-box">
+            <span class="stat-val">5 Months</span>
+            <span class="stat-lbl">Game Dev / Backend Intern</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-val">5 Tracks</span>
+            <span class="stat-lbl">Game, Art, UI/UX &amp; AI</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-val">Unity · C#</span>
+            <span class="stat-lbl">Core Dev + MCP &amp; AI</span>
+          </div>
+        </div>
       </div>
-      <div class="card thumb">
-        <img src="img/profile.png">
+
+      <div class="hero-visual reveal in-view">
+        <div class="card thumb" style="padding:0;margin:0">
+          <img src="img/profile.png" alt="Thitimethi Limaphirak profile">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="strengths">
+    <div class="wrap">
+      <h2 class="sec-title reveal">What I Can Help Your Team With</h2>
+      <div class="pillars">
+        <article class="card pillar reveal">
+          <span class="pillar-num">01 / GAMEPLAY &amp; BACKEND</span>
+          <h3>Game Systems &amp; Backend</h3>
+          <p>Built character abilities, skills, equipment, and monster mechanics in a live game, plus handled pre-release testing and bug fixes.</p>
+        </article>
+        <article class="card pillar reveal">
+          <span class="pillar-num">02 / ART &amp; UI/UX</span>
+          <h3>Both Code and Visuals</h3>
+          <p>I can jump between Unity / C# and creative tools like Aseprite for pixel art, Blockbench for 3D models, and game UI design.</p>
+        </article>
+        <article class="card pillar reveal">
+          <span class="pillar-num">03 / AI &amp; MCP WORKFLOW</span>
+          <h3>AI &amp; MCP Workflow</h3>
+          <p>I pick the right AI models and use MCP tools for each task to write code, debug, and prototype much faster.</p>
+        </article>
       </div>
     </div>
   </section>
 
   <section id="about">
-  <div class="wrap grid two">
-    <article class="card">
-      <h2 class="sec-title">About Me</h2>
-      <div class="about-grid">
-        <div>
-          <p><strong>Thitimethi Limaphirak</strong><br/>Nickname: Owen</p>
-          <p>Birthday: January, 2003<br/>Age: 23 years</p>
+    <div class="wrap grid two">
+      <article class="card reveal">
+        <h2 class="sec-title">About Me</h2>
+        <div class="about-grid">
+          <div>
+            <p><strong>Thitimethi Limaphirak</strong><br/>Nickname: Owen</p>
+            <p>Birthday: January, 2003<br/>Age: 23 years</p>
+            <p>Target Role:<br/><strong>Game Design &amp; Development</strong></p>
+          </div>
+          <div>
+            <p>
+              Email:<br/>
+              <button type="button" class="copy-email" data-email="thitimethi.l@gmail.com" title="Click to copy">
+                thitimethi.l@gmail.com ⎘
+              </button>
+            </p>
+            <p>
+              Email (Personal):<br/>
+              <button type="button" class="copy-email" data-email="nice2mu.hub@gmail.com" title="Click to copy">
+                nice2mu.hub@gmail.com ⎘
+              </button>
+            </p>
+          </div>
         </div>
-        <div>
-          <p>
-            Email: <strong>thitimethi.l@gmail.com</strong><br/>
-            Email (Personal): <strong>nice2mu.hub@gmail.com</strong>
-          </p>
-          <p>Interested occupation: <strong>Game Design and Development</strong></p>
+      </article>
+
+      <aside class="card reveal">
+        <h2 class="sec-title">Social</h2>
+        <div class="social-list">
+          <a class="social-pill" href="https://www.facebook.com/thitimethi.limaphirak" target="_blank" rel="noopener">
+            <span>Facebook</span>
+            <span class="muted">Thitimethi Limaphirak ↗</span>
+          </a>
+          <a class="social-pill" href="https://www.linkedin.com/in/thitimethi-limaphirak-a6a855381" target="_blank" rel="noopener">
+            <span>LinkedIn</span>
+            <span class="muted">Thitimethi Limaphirak ↗</span>
+          </a>
+          <a class="social-pill" href="https://github.com/Nice2MU" target="_blank" rel="noopener">
+            <span>GitHub</span>
+            <span class="muted">Nice2MU ↗</span>
+          </a>
+          <a class="social-pill" href="https://www.youtube.com/@Nice2MU" target="_blank" rel="noopener">
+            <span>YouTube</span>
+            <span class="muted">@Nice2MU ↗</span>
+          </a>
         </div>
-      </div>
-    </article>
-    <aside class="card">
-      <h2 class="sec-title">Social</h2>
-      facebook: <a href="https://www.facebook.com/thitimethi.limaphirak" target="_blank" rel="noopener">Thitimethi Limaphirak</a><br/>
-      Linkedin: <a href="https://www.linkedin.com/in/thitimethi-limaphirak-a6a855381" target="_blank" rel="noopener">Thitimethi Limaphirak</a><br/>
-      Github: <a href="https://github.com/Nice2MU" target="_blank" rel="noopener">Nice2MU</a></p>
-    </aside>
-  </div>
-</section>
+      </aside>
+    </div>
+  </section>
 
   <section id="experience">
     <div class="wrap">
-      <h2 class="sec-title">Experience</h2>
-      <article class="card">
+      <h2 class="sec-title reveal">Experience</h2>
+      <article class="card exp-card reveal">
         <div class="exp-head">
           <h3>Junior Game Dev / Backend (Intern)</h3>
           <span class="exp-period">Duration: 5 Months</span>
@@ -98,28 +175,28 @@
 
   <section id="skills">
     <div class="wrap grid two">
-      <div class="card">
+      <div class="card reveal">
         <h2 class="sec-title">Skills</h2>
         <ul class="chips">
           <li>C#, C++</li><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>HTML</li><li>CSS</li><li>PHP</li><li>SQL</li><li>Pixel/2D Art Creation</li><li>3D Modeling &amp; Animation</li><li>UI/UX Design</li><li>AI-Assisted Coding &amp; Art</li><li>MCP &amp; AI Model Selection</li>
         </ul>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h2 class="sec-title">Soft Skills</h2>
         <ul class="chips">
           <li>Problem solving and analytical thinking</li><li>Creativity in design and development</li><li>Quick to learn and develop new skills</li>
         </ul>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h2 class="sec-title">Tools</h2>
         <ul class="chips">
           <li>VS Code</li><li>Unity</li><li>Blockbench</li><li>Blender</li><li>Git, GitHub</li><li>Adobe Photoshop</li><li>Aseprite</li><li>AI Assistants &amp; MCP</li>
         </ul>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h2 class="sec-title">Hobbies</h2>
         <ul class="chips">
           <li>Playing video games</li><li>Board games</li><li>Tabletop games</li><li>Assembling and painting plastic models</li>
@@ -130,168 +207,116 @@
 
   <section id="works">
     <div class="wrap">
-      <h2 class="sec-title">Works</h2>
-      <div class="grid three">
-        <article class="card proj">
+      <div class="works-head reveal">
+        <h2 class="sec-title">Works</h2>
+        <div class="filter-bar" role="group" aria-label="Filter works">
+          <button type="button" class="filter-btn active" data-filter="all">All (5)</button>
+          <button type="button" class="filter-btn" data-filter="gamedev">Game Dev</button>
+          <button type="button" class="filter-btn" data-filter="art">2D/3D Art</button>
+          <button type="button" class="filter-btn" data-filter="uiux">UI/UX</button>
+          <button type="button" class="filter-btn" data-filter="ai">AI Workflow</button>
+        </div>
+      </div>
+
+      <div class="works-grid">
+        <article class="card proj featured reveal" data-category="gamedev">
           <div class="thumb slideshow"
                data-slides='["img/works1a.png","img/works2a.png","img/works3a.png","img/works4a.png","img/works5a.png","img/works6a.png","img/works7a.png","img/works8a.png"]'
                data-interval="4000">
             <img class="slide active" src="img/works1a.png" alt="Game Development cover">
           </div>
           <h3>Game Development</h3>
-          <p class="muted">Game Development & Prototype | TheEchoes</p>
-          <p class="muted">Game development with Unity and VS Code, Art with Aseprite</p>
-          <p><a href="https://www.notion.so/TheEchoes-1a3ea5f5565c80e89d64e1b425fc93a0?source=copy_link" target="_blank" rel="noopener">View more on projects →</a></p>
-        </article>
-
-        <article class="card proj">
-          <div class="thumb slideshow"
-               data-slides='["img/works1b.png","img/works2b.png","img/works3b.png","img/works4b.png","img/works5b.png"]'
-               data-interval="4500">
-            <img class="slide active" src="img/works1b.png" alt="2D & 3D Modeling & Animation cover">
+          <span class="proj-role">Role: Solo Developer &amp; Pixel Artist</span>
+          <p class="muted">Game Development &amp; Prototype | TheEchoes</p>
+          <p class="muted">Built gameplay systems and pixel art assets from prototype to playable build.</p>
+          <div class="proj-tags">
+            <span>Unity</span><span>VS Code</span><span>Aseprite</span>
           </div>
-          <h3>2D/3D Modeling &amp; Animation</h3>
-          <p class="muted">2D & 3D modeling, rigging, and animation</p>
-          <p class="muted">Low-poly modeling and animation with Blockbench, 2D pixel art creation with Aseprite</p>
+          <p class="proj-link"><a href="https://www.notion.so/TheEchoes-1a3ea5f5565c80e89d64e1b425fc93a0?source=copy_link" target="_blank" rel="noopener">View project details →</a></p>
         </article>
 
-        <article class="card proj">
-          <div class="thumb slideshow"
-               data-slides='["img/works1c.png","img/works2c.png"]'
-               data-interval="5000">
-            <img class="slide active" src="img/works1c.png" alt="UI/UX cover">
-          </div>
-          <h3>UI/UX Design</h3>
-          <p class="muted">UI/UX design for games and applications</p>
-          <p class="muted">Prototyping and design with Figma</p>
-        </article>
-
-        <article class="card proj">
+        <article class="card proj featured reveal" data-category="gamedev">
           <div class="thumb slideshow"
                data-slides='["img/works1d.png","img/works2d.png","img/works3d.png","img/works4d.png","img/works5d.png","img/works6d.png"]'
                data-interval="4500">
             <img class="slide active" src="img/works1d.png" alt="Internship Project cover">
           </div>
           <h3>Internship Project</h3>
+          <span class="proj-role">Role: Junior Game Dev / Backend Intern</span>
           <p class="muted">Kyrie &amp; Terra: Eternal | Rojanakarn Game</p>
-          <p class="muted">Implemented character, skill, equipment &amp; monster systems, plus QA testing and bug fixes</p>
+          <p class="muted">Implemented character, skill, equipment &amp; monster systems, plus QA testing and bug fixes.</p>
+          <div class="proj-tags">
+            <span>Game Systems</span><span>Backend</span><span>QA &amp; Bug Fix</span>
+          </div>
         </article>
 
-        <article class="card proj">
+        <article class="card proj reveal" data-category="art">
+          <div class="thumb slideshow"
+               data-slides='["img/works1b.png","img/works2b.png","img/works3b.png","img/works4b.png","img/works5b.png"]'
+               data-interval="4500">
+            <img class="slide active" src="img/works1b.png" alt="2D & 3D Modeling & Animation cover">
+          </div>
+          <h3>2D/3D Modeling &amp; Animation</h3>
+          <span class="proj-role">Role: 2D/3D Artist &amp; Animator</span>
+          <p class="muted">2D &amp; 3D modeling, rigging, and animation</p>
+          <p class="muted">Low-poly models &amp; animations with Blockbench, 2D pixel art with Aseprite.</p>
+          <div class="proj-tags">
+            <span>Blockbench</span><span>Aseprite</span><span>Rigging</span>
+          </div>
+        </article>
+
+        <article class="card proj reveal" data-category="uiux">
+          <div class="thumb slideshow"
+               data-slides='["img/works1c.png","img/works2c.png"]'
+               data-interval="5000">
+            <img class="slide active" src="img/works1c.png" alt="UI/UX cover">
+          </div>
+          <h3>UI/UX Design</h3>
+          <span class="proj-role">Role: UI/UX Designer</span>
+          <p class="muted">UI/UX design for games and applications</p>
+          <p class="muted">Interactive wireframes, HUD layouts, and UI prototypes for games and apps.</p>
+          <div class="proj-tags">
+            <span>UI/UX</span><span>Game UI</span><span>Prototyping</span>
+          </div>
+        </article>
+
+        <article class="card proj reveal" data-category="ai">
           <div class="thumb slideshow"
                data-slides='["img/works1e.png","img/works2e.png","img/works3e.png","img/works4e.png","img/works5e.png","img/works6e.png","img/works7e.png","img/works8e.png","img/works9e.png","img/works10e.png","img/works11e.png"]'
                data-interval="4500">
             <img class="slide active" src="img/works1e.png" alt="AI-Assisted Workflow cover">
           </div>
           <h3>AI-Assisted Workflow</h3>
+          <span class="proj-role">Role: Developer &amp; AI Workflow Builder</span>
           <p class="muted">AI-Powered Development &amp; Prototyping</p>
-          <p class="muted">Coding, art &amp; 3D prototyping, MCP integration, and model selection</p>
+          <p class="muted">Coding, art &amp; 3D prototyping, MCP integration, and model selection.</p>
+          <div class="proj-tags">
+            <span>AI Coding</span><span>MCP</span><span>Model Selection</span>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="wrap">© <span id="y"></span> Thitimethi Limaphirak</div>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent=new Date().getFullYear();
-    (function(){
-      const slideBoxes = document.querySelectorAll('.slideshow');
-      slideBoxes.forEach(box => {
-        const interval = parseInt(box.dataset.interval || '4000', 10);
-        let list;
-        try { list = JSON.parse(box.dataset.slides || '[]'); }
-        catch { list = []; }
-        if (!Array.isArray(list) || list.length < 2) return;
-        const imgs = box.querySelectorAll('img.slide');
-        if (imgs.length < 2) {
-          const extra = document.createElement('img');
-          extra.className = 'slide';
-          extra.alt = '';
-          box.appendChild(extra);
-        }
-        const [a,b] = box.querySelectorAll('img.slide');
-        let i = 0;
-        a.src = list[i]; a.classList.add('active');
-        b.src = list[(i+1) % list.length];
-        list.slice(2).forEach(src => { const p = new Image(); p.src = src; });
-        setInterval(()=>{
-          i = (i + 1) % list.length;
-          const show = (a.classList.contains('active')) ? b : a;
-          const hide = (show === a) ? b : a;
-          show.src = list[i]; show.classList.add('active');
-          hide.classList.remove('active');
-        }, interval);
-      });
-    })();
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const lb = document.createElement('div');
-      lb.className = 'lightbox';
-      lb.innerHTML = `
-        <div class="lb-frame">
-          <button class="lb-btn lb-close" aria-label="Close">✕</button>
-          <button class="lb-btn lb-prev"  aria-label="Previous">‹</button>
-          <img class="lightbox-img" alt="">
-          <button class="lb-btn lb-next"  aria-label="Next">›</button>
+  <section id="contact">
+    <div class="wrap">
+      <div class="card cta-card reveal">
+        <div>
+          <h2>Want to work together or chat?</h2>
+          <p>I’m currently looking for Junior Game Dev, Backend, or AI-assisted dev roles. Feel free to reach out anytime!</p>
         </div>
-      `;
-      document.body.appendChild(lb);
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="Resume_thitimethi.pdf" download="Resume_thitimethi.pdf">Download Resume ↓</a>
+          <button type="button" class="btn btn-ghost copy-email" data-email="thitimethi.l@gmail.com">Copy Email (thitimethi.l@gmail.com) ⎘</button>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/thitimethi-limaphirak-a6a855381" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/Nice2MU" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      const frame   = lb.querySelector('.lb-frame');
-      const imgEl   = lb.querySelector('.lightbox-img');
-      const btnPrev = lb.querySelector('.lb-prev');
-      const btnNext = lb.querySelector('.lb-next');
-      const btnClose= lb.querySelector('.lb-close');
-
-      let slides = [], index = 0;
-
-      function show(i){
-        index = (i + slides.length) % slides.length;
-        imgEl.src = slides[index];
-      }
-      function openWith(list, startSrc){
-        slides = list;
-        const start = slides.indexOf(startSrc);
-        show(start >= 0 ? start : 0);
-        lb.classList.add('active');
-        document.body.classList.add('lb-open');
-      }
-      function close(){
-        lb.classList.remove('active');
-        document.body.classList.remove('lb-open');
-      }
-
-      document.querySelectorAll('.thumb.slideshow').forEach(box => {
-        const list = JSON.parse(box.dataset.slides || '[]');
-        box.addEventListener('click', e => {
-          const img = e.target.closest('img');
-          if(!img) return;
-          openWith(list.length ? list : [img.src], img.src);
-        });
-      });
-
-      btnPrev.addEventListener('click', () => show(index - 1));
-      btnNext.addEventListener('click', () => show(index + 1));
-      btnClose.addEventListener('click', close);
-
-      lb.addEventListener('click', e => { if(e.target === lb) close(); });
-
-      document.addEventListener('keydown', e => {
-        if(!lb.classList.contains('active')) return;
-        if(e.key === 'Escape') close();
-        if(e.key === 'ArrowLeft') show(index - 1);
-        if(e.key === 'ArrowRight') show(index + 1);
-      });
-      let sx=0;
-      imgEl.addEventListener('touchstart', e=>sx=e.touches[0].clientX,{passive:true});
-      imgEl.addEventListener('touchend', e=>{
-        const dx=e.changedTouches[0].clientX - sx;
-        if(Math.abs(dx)>40) (dx>0?btnPrev:btnNext).click();
-      },{passive:true});
-    });
-  </script>
+  <footer>
+    <div class="wrap">© <span id="y"></span> Thitimethi Limaphirak · Game Design &amp; Development</div>
+  </footer>
 </body>
 </html>
